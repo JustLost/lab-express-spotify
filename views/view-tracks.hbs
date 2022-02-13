@@ -1,8 +1,9 @@
-    <h1>Title</h1>
-    
-    {{#each Tracks}}
-    
-    <p>{{this.name}}</p>
-    <audio controls src="{{this.preview_url}}">preview</audio>
    
+    <div class="container">
+    {{#each Tracks}}
+    <div class="track-box">
+        <p>{{this.name}}</p>
+        <audio controls src="{{this.preview_url}}">preview</audio>
+    </div> 
     {{/each}}
+    </div>

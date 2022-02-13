@@ -1,5 +1,9 @@
-    {{#each artists}}
-    <img src="{{this.images.0.url}}" alt="{{name}}">
-    <h2>{{this.name}}</h2>
-    <button><a href="/albums/{{this.id}}">view Albums</a></button>
+    <section class="container">
+    {{#each artists}}    
+        <div class="artist-box">
+        <img src="{{this.images.0.url}}" alt="{{name}}">
+        <h2>{{this.name}}</h2>
+        <button class="view-button"><a href="/albums/{{this.id}}">View albums</a></button>
+    </div>
     {{/each}}
+    </section>
