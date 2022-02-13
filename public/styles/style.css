@@ -124,8 +124,8 @@ a {
 .track-box {
     display: flex;    
     flex-wrap: wrap;
-    width: 700px;
-    height: 50px;
+    width: 725px;
+    min-height: 50px;
     justify-content: space-between;
 
 
